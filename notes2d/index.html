@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Notes 2D</title>
+
+		<!-- Imports -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.2/lodash.min.js"></script>
+
+		<link rel="stylesheet" href="./styles.css">
+	</head>
+	<body>
+		<div id="menu-main" class="menubar">
+			<div id="btn-add" class="menu-btn">Add Note</div>
+			<!-- <div id="btn-save" class="menu-btn">Save All</div> -->
+		</div>
+		<div id="menu-add" class="menubar">
+			<div id="btn-add-text" class="menu-btn">Text</div>
+			<div id="btn-add-image" class="menu-btn todo">Image</div>
+			<div id="btn-add-group" class="menu-btn todo">Group</div>
+			<div id="btn-add-flow" class="menu-btn todo">Flow</div>
+		</div>
+		<div id="board">
+
+		</div>
+
+		<!-- templates -->
+
+		<!-- text note template -->
+		<template id="template-note-text">
+			<div class="note text">
+				<div class="handle"></div>
+				<div class="text"
+					contenteditable="true"
+					data-placeholder="Write something..."></div>
+			</div>
+		</template>
+
+		<!-- js code -->
+		<script src="./app.js" charset="utf-8"></script>
+	</body>
+</html>

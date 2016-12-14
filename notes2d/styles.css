@@ -1,0 +1,115 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 120%;
+  position: relative;
+  background-color: #fff;
+  font-family: 'Cambria', sans-serif;
+  color: #444;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.menubar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-btn {
+  border-bottom: 2px solid #aaa;
+  height: 30px;
+  padding: 5px 5px;
+  margin: 0px 10px;
+}
+
+.menu-btn:hover {
+  cursor: pointer;
+  border-bottom-color: #888;
+}
+
+.menu-btn.todo {
+  text-decoration: line-through;
+}
+
+.menu-btn.todo:hover {
+  cursor: not-allowed !important;
+}
+
+#board {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50px;
+  bottom: 0;
+  overflow: hidden;
+  border-top: 1px solid #aaa;
+}
+
+.note {
+  border: 1px solid #aaa;
+  display: inline-block;
+  position: absolute !important;
+}
+
+.note .handle {
+  height: 10px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.note .text {
+  display: inline-block;
+  padding: 10px;
+}
+
+.note .text h1 {
+  font-size: 150%;
+  margin: 0;
+}
+
+.note .text h2 {
+  font-size: 150%;
+  margin: 0;
+}
+
+.note .text h3 {
+  font-size: 150%;
+  margin: 0;
+}
+
+.note .text h4 {
+  font-size: 150%;
+  margin: 0;
+}
+
+.note .text h5 {
+  font-size: 150%;
+  margin: 0;
+}
+
+.note .text h6 {
+  font-size: 150%;
+  margin: 0;
+}
+
+[contenteditable=true]:empty:not(:focus)::before {
+  color: #999;
+  content: attr(data-placeholder);
+}
