@@ -1,0 +1,247 @@
+@charset "UTF-8";
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Nunito Sans', sans-serif;
+  color: #aaa;
+  background-color: #222;
+  font-size: 120%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1, h2, h3, h4, p, label, button, table {
+  user-select: none;
+  -webkit-user-select: none;
+  cursor: default;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 800px;
+}
+
+.wrapper #create-section {
+  display: flex;
+  width: 800px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper #create-section .group-input {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  width: 50vw;
+}
+
+.wrapper #play-section {
+  width: 90vw;
+  position: relative;
+}
+
+.wrapper #play-section #table table, .wrapper #play-section #table tr, .wrapper #play-section #table td {
+  border-collapse: collapse;
+}
+
+.wrapper #play-section #table table {
+  width: 100%;
+  background-color: #2c2c2c;
+  table-layout: fixed;
+}
+
+.wrapper #play-section #table table tr:first-child {
+  height: 50px;
+  border-bottom: 3px solid #111;
+  border-top: 2px solid #111;
+  background-color: #282828;
+  font-weight: bold;
+}
+
+.wrapper #play-section #table table tr:first-child .domanda {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper #play-section #table table tr:first-child .domanda .punteggio {
+  font-size: 80%;
+}
+
+.wrapper #play-section #table table tr:not(:first-child) {
+  border-bottom: 2px solid #111;
+}
+
+.wrapper #play-section #table table tr:not(:first-child) td {
+  height: 45px;
+  transition: color 150ms;
+}
+
+.wrapper #play-section #table table tr:not(:first-child) td:not(:first-child) div {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper #play-section #table table tr:not(:first-child) td:not(:first-child) div.good {
+  color: lightgreen;
+  background-color: darkgreen;
+}
+
+.wrapper #play-section #table table tr:not(:first-child) td:not(:first-child) div.bad {
+  color: pink;
+  background-color: darkred;
+}
+
+.wrapper #play-section #table table tr:not(:first-child) td:not(:first-child) div.jolly.good {
+  background-color: gold;
+  color: #333;
+}
+
+.wrapper #play-section #table table tr:not(:first-child) td:not(:first-child) div.jolly.good::after {
+  display: none;
+}
+
+.wrapper #play-section #table table tr:not(:first-child) td:not(:first-child) div.jolly::after {
+  content: '★';
+  color: gold;
+  position: absolute;
+  font-size: 130%;
+  right: 4px;
+  top: 1px;
+}
+
+.wrapper #play-section #table table tr:not(:first-child):last-child {
+  border-bottom: 2px solid #111;
+}
+
+.wrapper #play-section #table table tr:not(:first-child):hover td {
+  color: #ccc;
+}
+
+.wrapper #play-section #table table tr td:first-child {
+  border-right: 1px solid #111;
+  border-left: 1px solid #111;
+  width: 350px;
+}
+
+.wrapper #play-section #table table tr td:not(:first-child):not(:last-child) {
+  border-right: 1px solid #111;
+}
+
+.wrapper #play-section #table table tr td:last-child {
+  border-right: 1px solid #111;
+}
+
+.wrapper #play-section #table table tr td:not(:first-child) {
+  text-align: center;
+}
+
+.wrapper #play-section #table table td .squadra {
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wrapper #play-section #table table tr:first-child td:first-child {
+  padding: 0 10px;
+}
+
+.wrapper #play-section .pane-answers {
+  position: fixed;
+  bottom: -165px;
+  left: 0;
+  right: 0;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid #111;
+  border-radius: 2px;
+  background-color: #2f2f2f;
+  transition: all 250ms;
+}
+
+.wrapper #play-section .pane-answers h2 {
+  padding: 0;
+  margin: 5px;
+  margin-bottom: 20px;
+  font-size: 100%;
+  transition: all 250ms;
+  color: #aaa;
+}
+
+.wrapper #play-section .pane-answers:hover {
+  height: 200px;
+  bottom: 0;
+}
+
+.wrapper #play-section .pane-answers .group-answer {
+  margin: 10px 20px;
+}
+
+.risposta-field {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+}
+
+.risposta-field label {
+  width: 200px;
+}
+
+input, select, button {
+  outline: none;
+  font-size: 100%;
+  font-family: 'Nunito Sans', sans-serif;
+  background-color: #282828;
+  color: #aaa;
+  height: 30px;
+  border-radius: 2px;
+  border: 1px solid #111;
+  padding: 2px 5px;
+}
+
+label {
+  transition: color 150ms;
+}
+
+label:hover {
+  color: #ccc;
+}
+
+button {
+  padding: 2px 30px;
+  transition: color 150ms;
+}
+
+button:hover {
+  cursor: pointer;
+  color: #ccc;
+}
+
+.flex-row {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
