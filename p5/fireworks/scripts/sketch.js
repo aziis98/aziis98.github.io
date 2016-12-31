@@ -12,9 +12,9 @@ String.prototype.format = function() {
 // P5.js experiment boilerplate
 
 // plug in Stats
-let stats = new Stats();
-stats.setMode(0);
-document.body.appendChild(stats.domElement);
+// let stats = new Stats();
+// stats.setMode(0);
+// document.body.appendChild(stats.domElement);
 
 // plug in dat.GUI
 window.onload = function() {
@@ -40,7 +40,7 @@ function setup() {
 }
 
 function draw() {
-    stats.begin();
+    // stats.begin();
 
     background(0, 50);
 
@@ -54,5 +54,5 @@ function draw() {
         return !firework.isDead();
     });
 
-    stats.end();
+    // stats.end();
 }
