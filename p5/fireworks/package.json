@@ -1,0 +1,11 @@
+{
+    "name": "p5-fireworks",
+    "version": "1.0.0",
+    "main": "index.html",
+    "repository": {
+        "url": "https://github.com/crookookoo/p5-boilerplate.git",
+        "type": "git"
+    },
+    "author": "aziis98 <antonio.delucreziis@gmail.com>",
+    "license": "MIT"
+}
