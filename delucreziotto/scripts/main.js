@@ -3,8 +3,111 @@
 (function(exports) {
 	'use strict';
 
-	$(window).on('post-injection', () => {
+	let $settingsSection
+	let $playSection
 
+	$(function () {
+		$settingsSection = $('#settings-section');
+		$playSection = $('#play-section');
+
+		loadTemplate('settings', function (source) {
+			$settingsSection.empty().append($.parseHTML(source));
+			setupSettingsSection();
+		});
+
+		loadTemplate('play', function (source) {
+			$playSection.empty().append($.parseHTML(source));
+			setupPlaySection();
+		});
+
+		$settingsSection.show();
+		$playSection.hide();
+
+	});
+
+	function setupSettingsSection() {
+		// async
+		let renderItemRisposta;
+		let renderItemSquadra;
+
+		const $listaRisposte = $('#lista-risposte');
+		const $listaSquadre = $('#lista-squadre');
+
+		const $numeroRisposte = $('#numero-risposte');
+		const $numeroSquadre = $('#numero-squadre');
+
+		// async
+		loadTemplate('item-risposta', function (source) {
+			renderItemRisposta = compileTemplate(source);
+
+			displayListaRisposte();
+		});
+
+		// async
+		loadTemplate('item-squadra', function (source) {
+			renderItemSquadra = compileTemplate(source);
+
+			displayListaSquadre();
+		});
+
+		// listaRisposte
+
+		let hackState = _.range(50).map(h => '0000');
+		function displayListaRisposte() {
+			$listaRisposte.empty();
+
+			_.range(Number($numeroRisposte.val())).forEach(i => {
+				const $item = $(renderItemRisposta({ index: i, value: hackState[i] }));
+				$item.find('input').on('change', function () {
+					hackState[i] = $(this).val();
+				});
+				$listaRisposte.append($item)
+			});
+		}
+
+		$numeroRisposte.on('change', function () {
+			displayListaRisposte();
+		});
+
+		// listaSquadre
+
+		function displayListaSquadre() {
+			$listaSquadre.empty();
+
+			_.range(Number($numeroSquadre.val())).forEach(i =>
+				$listaSquadre.append(renderItemSquadra({ index: i, value: undefined }))
+			);
+		}
+
+		$numeroSquadre.on('change', function () {
+			displayListaSquadre();
+		});
+
+		//
+
+		$('#crea-gara').on('click', function () {
+			const risposte = $('.item-risposta input')
+				.map((i, el) => $(el).val().trim())
+				.map(vl => Number(vl))
+				.toArray();
+			const squadre = $('.item-squadra input')
+				.map((i, el) => $(el).val().trim())
+				.toArray();
+			const durata = Number($('#durata-gara').val());
+			const deriva = Number($('#deriva-gara').val())
+
+			if (risposte.filter(r => isNaN(r)).length > 0 || squadre.filter(r => r.trim().length === 0).length > 0) {
+				console.error('Invalid inputs');
+			}
+			else {
+				creaGara(squadre, risposte, durata, deriva);
+				$settingsSection.hide();
+				$playSection.show();
+			}
+		})
+	}
+
+	function setupPlaySection() {
 		const $selezionaSquadra = $('#seleziona-squadra');
 		const $selezionaDomanda = $('#seleziona-domanda');
 		const $selezionaRisposta = $('#seleziona-risposta');
@@ -97,8 +200,7 @@
 		exports.momentInizioGara = momentInizioGara;
 		exports.momentFineGara = momentFineGara;
 		exports.labelTempoRimasto = labelTempoRimasto;
-
-	});
+	}
 
 }(window));
 

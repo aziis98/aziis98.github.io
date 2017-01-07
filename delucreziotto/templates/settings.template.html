@@ -1,0 +1,75 @@
+<h2>Crea Gara</h2>
+
+<table>
+	<tr>
+		<td><label for="nome-gara">Nome</label></td>
+		<td><span></span></td>
+		<td><input type="text" id="nome-gara" value=""></td>
+	</tr>
+	<tr>
+		<td><label for="durata-gara">Durata</label></td>
+		<td><span></span></td>
+		<td><input type="number" id="durata-gara" value="120" min="5" max="31415"></td>
+	</tr>
+	<tr>
+		<td><label for="deriva-gara">Deriva</label></td>
+		<td><span></span></td>
+		<td><input type="number" id="deriva-gara" value="1" min="1" max="16108"></td>
+	</tr>
+	<tr>
+		<td class="dy-list">
+			<label>Risposte</label>
+			<!-- <button id="aggiungi-risposta">+</button> -->
+			<input type="number" id="numero-risposte" value="5" min="1" max="4242">
+		</td>
+		<td><span></span></td>
+		<td id="lista-risposte">
+			<!-- injected: .item-risposta -->
+		</td>
+	</tr>
+	<tr>
+		<td class="dy-list">
+			<label>Squadre</label>
+			<input type="number" id="numero-squadre" value="3" min="2" max="1000">
+		</td>
+		<td><span></span></td>
+		<td id="lista-squadre">
+			<!-- injected: .item-squadra -->
+		</td>
+	</tr>
+</table>
+
+<button id="crea-gara">Crea Gara</button>
+
+<!-- <div class="group">
+	<label for="nome-gara">Nome Gara:</label>
+	<input type="text" id="nome-gara" placeholder="Gara di prova">
+</div>
+
+<div class="group">
+	<label for="durata-gara">Durata della gara in minuti:</label>
+	<input type="number" id="durata-gara" value="120" min="5" max="31415">
+</div>
+
+<div class="group">
+	<label>Numero risposte:</label>
+	<input type="number" id="numero-risposte" value="5" min="1" max="16180">
+</div>
+
+<p>Inserisci le risposte della gara: </p>
+
+<div id="lista-risposte">
+	// injected: .item-risposta
+</div>
+
+<p>Inserisci i nomi delle squadre che parteciperanno: </p>
+
+<div id="lista-squadre">
+	// injected: .item-squadra
+</div>
+
+<button id="aggiungi-squadra">Aggiungi</button>
+
+<br>
+
+<button id="crea-gara">Crea Gara</button> -->

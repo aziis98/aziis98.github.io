@@ -6,6 +6,7 @@ html, body {
 
 body {
   min-height: 100vh;
+  margin-bottom: 150px;
   font-family: 'Nunito Sans', sans-serif;
   color: #aaa;
   background-color: #222;
@@ -32,18 +33,73 @@ h1, h2, h3, h4, p, label, button, table {
   width: 800px;
 }
 
-.wrapper #create-section {
+.wrapper #settings-section {
   display: flex;
-  width: 800px;
   flex-direction: column;
   align-items: center;
 }
 
-.wrapper #create-section .group-input {
+.wrapper #settings-section table, .wrapper #settings-section tr, .wrapper #settings-section td {
+  border-collapse: collapse;
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper #settings-section table {
+  width: 100%;
+}
+
+.wrapper #settings-section table tr td {
+  margin: 15px 0;
+}
+
+.wrapper #settings-section table tr td:first-child {
+  padding: 5px 15px;
   display: flex;
-  justify-content: space-between;
-  margin: 10px;
-  width: 50vw;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.wrapper #settings-section table tr td:first-child input {
+  width: 75px;
+}
+
+.wrapper #settings-section table tr td:not(:first-child):not(:last-child) {
+  position: relative;
+}
+
+.wrapper #settings-section table tr td:not(:first-child):not(:last-child) span {
+  position: absolute;
+  display: block;
+  border-left: 2px solid #111;
+  width: 1px;
+  top: 7px;
+  bottom: 7px;
+}
+
+.wrapper #settings-section table tr td:last-child {
+  padding: 5px 15px;
+}
+
+.wrapper #settings-section table tr td:last-child .group {
+  padding: 5px;
+  padding-left: 0;
+}
+
+.wrapper #settings-section table tr td.dy-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper #settings-section table tr td.dy-list button {
+  font-size: 110%;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  margin: 5px;
 }
 
 .wrapper #play-section {
@@ -208,9 +264,10 @@ input, select, button {
   outline: none;
   font-size: 100%;
   font-family: 'Nunito Sans', sans-serif;
-  background-color: #282828;
+  background-color: #1a1a1a;
   color: #aaa;
   height: 30px;
+  width: 250px;
   border-radius: 2px;
   border: 1px solid #111;
   padding: 2px 5px;
@@ -225,13 +282,12 @@ label:hover {
 }
 
 button {
-  padding: 2px 30px;
   transition: color 150ms;
 }
 
 button:hover {
   cursor: pointer;
-  color: #ccc;
+  color: #fff;
 }
 
 .flex-row {
@@ -244,4 +300,8 @@ button:hover {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+::-webkit-input-placeholder {
+  color: #555;
 }

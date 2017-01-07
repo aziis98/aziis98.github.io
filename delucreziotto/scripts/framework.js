@@ -27,34 +27,34 @@
         }
     };
 
-    exports.loadPartialHMTL = function loadPartialHMTL(src, cb) {
-        $.get(src, function(data) {
-            cb($.parseHTML(data));
+    exports.loadTemplate = function loadTemplate(name, cb) {
+        $.get('./templates/' + name + '.template.html', function(data) {
+            cb(data);
         });
     }
 
-    function injectAdlLoads() {
-        const $adlLoadList = document.querySelectorAll('adl-load');
-        let c = 0;
-
-        $adlLoadList.forEach(elem => {
-            const src = elem.attributes['src'].value + '.template.html';
-
-            loadPartialHMTL(src, function(injectedElem) {
-                console.log('Loaded: ' + src);
-                $(elem).replaceWith(injectedElem);
-
-                c++;
-
-                if (c === $adlLoadList.length) {
-                    $(window).trigger('post-injection');
-                }
-            })
-        });
-    }
+    // function injectAdlLoads() {
+    //     const $adlLoadList = document.querySelectorAll('adl-load');
+    //     let c = 0;
+	//
+    //     $adlLoadList.forEach(elem => {
+    //         const src = elem.attributes['src'].value + '.template.html';
+	//
+    //         loadPartialHMTL(src, function(injectedElem) {
+    //             console.log('Loaded: ' + src);
+    //             $(elem).replaceWith(injectedElem);
+	//
+    //             c++;
+	//
+    //             if (c === $adlLoadList.length) {
+    //                 $(window).trigger('post-injection');
+    //             }
+    //         })
+    //     });
+    // }
 
     $(function() {
-        injectAdlLoads();
+        // injectAdlLoads();
     });
 
 }(window));
