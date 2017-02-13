@@ -150,10 +150,8 @@ var __makeRelativeRequire = function(require, mappings, pref) {
 require.register("initialize.js", function(exports, require, module) {
 'use strict';
 
-var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
-
 var _ = require('lodash/fp');
-
+var tokenize = require('./tokenizer');
 window._ = _;
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -262,6 +260,17 @@ function scanForBinary(list, symbolPredicate, mergeFn) {
 	}
 }
 
+function assert(expected, actual) {
+	if (!_.isEqual(expected, actual)) throw 'Assertion failed, got ' + JSON.stringify(actual) + ' insted of ' + JSON.stringify(expected);else console.log('Assertion passed, got ' + JSON.stringify(actual));
+}
+
+});
+
+;require.register("tokenizer.js", function(exports, require, module) {
+'use strict';
+
+var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
+
 function isChar(character) {
 	return function (char) {
 		return char.length === 1 && char === character;
@@ -306,25 +315,7 @@ function tokenize(source) {
 	return list;
 }
 
-function assert(expected, actual) {
-	if (!_.isEqual(expected, actual)) throw 'Assertion failed, got ' + JSON.stringify(actual) + ' insted of ' + JSON.stringify(expected);else console.log('Assertion passed, got ' + JSON.stringify(actual));
-}
-
-function test1() {
-	assert(['1', ' '], tokenize('1 '));
-	assert(['1', ' ', '1'], tokenize('1 1'));
-	assert(['11'], tokenize('11'));
-	assert(['11', ' '], tokenize('11 '));
-	assert(['111'], tokenize('111'));
-
-	assert(['111', ' '], tokenize('111 '));
-	assert(['1', ' ', '1', ' '], tokenize('1 1 '));
-
-	assert(['111', '  ', '10', ' '], tokenize('111  10 '));
-	assert(['list', ' ', '=', ' ', '10.0', ';'], tokenize('list = 10.0;'));
-}
-// console.log('Testing:');
-// test1();
+module.exports = tokenize;
 
 });
 
