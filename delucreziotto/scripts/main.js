@@ -88,7 +88,7 @@
 		$('#crea-gara').on('click', function () {
 			const risposte = $('.item-risposta input')
 				.map((i, el) => $(el).val().trim())
-				.map(vl => Number(vl))
+				.map((i, vl) => Number(vl))
 				.toArray();
 			const squadre = $('.item-squadra input')
 				.map((i, el) => $(el).val().trim())

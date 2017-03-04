@@ -29,6 +29,14 @@
 			return squadra.jolly === domanda.index ? 2 : 1;
 		}
 
+		// For debugging
+		exports.gara = {
+			squadre: squadre,
+			risposte: risposte,
+			durata: durata,
+			deriva: deriva
+		};
+
 		gara.on('setup', function () {
 			// console.log('Setup');
 
@@ -132,12 +140,12 @@
 
 			const squadra = this.squadre.filter(s => s.name === nomeSquadra)[0];
 
-			if (squadra.jolly === -1) {
+			// if (squadra.jolly === -1) {
 				squadra.jolly = indiceDomanda;
-			}
-			else {
-				console.log('  La squadra ha già impostato il jolly!!! D: D: D:');
-			}
+			// }
+			// else {
+				// console.log('  La squadra ha già impostato il jolly!!! D: D: D:');
+			// }
 		})
 
 		gara.on('fine', function () {
@@ -189,6 +197,7 @@
 
 		$(window).trigger('updated-simulation', [ simulation ]);
 
+		// localStorage['simulator'] = JSON.stringify(simulator);
 	}
 
 	exports.creaGara = creaGara;
