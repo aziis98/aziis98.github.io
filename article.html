@@ -35,29 +35,16 @@
       </div>
    </nav>
 
-   <div id="app" class="container">
-      <article class="post" v-for="post in posts">
-         <div class="row">
-            <div class="info three columns">
-               <div class="crono">{{post.crono}}</div>
-            </div>
-            <div class="six columns">
-               <a class="title" :href="post.link">{{post.name}}</a>
-               <div class="subtitle" v-if="post.subtitle">{{post.subtitle}}</div>
-            </div>
-         </div>
-         <div class="row">
-            <div class="offset-by-three nine columns">
-               <p>
-                  {{post.description}}
-               </p>
-            </div>
-         </div>
-      </article>
-   </div>
+   <div id="app" class="article container" v-html="document"></div>
 
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.6/marked.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.2/vue.min.js"></script>
-   <script src="./_dist/app.bundle.js"></script>
+   <script src="./_dist/article.bundle.js"></script>
+
+   
+   <script type="text/javascript" async
+   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+ </script>
 </body>
 
 </html>

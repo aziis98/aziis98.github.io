@@ -1,0 +1,99 @@
+
+$border-color: #d0d0d0
+
+html, body
+   padding: 0
+   margin: 0
+
+body
+   font-family: 'Inconsolata', monospace
+   // display: flex
+   // flex-direction: column
+   // align-items: center
+
+//    width: 100%
+//    max-width: 1200px
+
+nav
+   
+   border-left: 1px solid $border-color
+   border-bottom: 1px solid $border-color
+   border-right: 1px solid $border-color
+
+   .row
+
+      & > div
+
+         display: flex
+         align-items: center
+         justify-content: center
+         height: 50px
+
+a
+   color: black
+   text-decoration: none
+
+   &:hover
+      color: black
+      text-decoration: underline
+      cursor: pointer
+
+#app
+
+   margin-top: 60px
+
+   .post
+      margin-bottom: 2rem
+
+      .info
+         .crono
+            display: flex
+            align-items: center
+            font-size: 1.4rem
+            height: 3.0rem
+            color: #888
+
+      
+      a.title
+         display: flex
+         align-items: center
+
+         height: 3.0rem
+         font-size: 2.75rem
+
+         // text-decoration: none
+         // color: black
+
+      .subtitle
+         font-size: 1.3rem
+         margin-bottom: 1.0rem
+
+      p
+         font-family: 'Open Sans', sans-serif
+
+.article
+
+   font-family: 'Open Sans', sans-serif
+
+   h1
+      font-family: 'Inconsolata', sans-serif
+      font-size: 4.5rem
+   h2
+      font-family: 'Inconsolata', sans-serif
+      font-size: 3.5rem
+   h3 
+      font-family: 'Inconsolata', sans-serif
+      font-size: 2.5rem
+   p
+      font-size: 1.5rem
+   code
+      font-size: 1.6rem
+   a
+      padding: 1px 2px
+      border-radius: 4px
+      text-decoration: underline
+      &:hover
+         // background: #9d8fc1
+         background: royalblue
+         color: white
+         text-decoration: none

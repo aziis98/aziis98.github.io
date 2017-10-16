@@ -1,18 +1,23 @@
 {
 	"posts": [
 		{
+			"name": "Sul Pensiero I",
+			"subtitle": "Filosofia",
+			"crono": "16 Ottobre 2017",
+			"link": "/article.html#/sul-pensiero-1.md"
+		},
+		{
 			"name": "Dashboard",
-			"subtitle": "A single-page-application dashboard with JS support for scripting",
+			"subtitle": "Web App",
+			"description": "A single-page-application dashboard with JS support for scripting",
 			"crono": "July 2017",
-			"link": "/dashboard"
+			"link": "https://aziis98.github.io/dashboard"
 		},
 		{
 			"name": "Notes 2D",
 			"subtitle": "Web App",
 			"crono": "14th December 2016",
 			"link": "/notes2d",
-			// "image": "http://images.freeimages.com/images/previews/885/notes-on-wood-2-1315485.jpg",
-
 			"description": "A note taking web app. You can add text (images and groups are planned to be added) and place it everywhere on the page. The notes are saved to the localStorage so you will find your notes everytime you reopen the site. It's still at it's early stages, but I plan to add more features in the next weeks."
 		}
 	]
