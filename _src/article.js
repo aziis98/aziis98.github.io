@@ -15,5 +15,6 @@ const app = new Vue({
    },
    data: {
       document: '',
+      message: 'Un messaggio importante è scritto qui',
    }
 });
