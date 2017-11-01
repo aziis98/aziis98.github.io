@@ -7,7 +7,7 @@ const app = new Vue({
 
         const articleFile = window.location.hash.substring(2);
 
-        fetch('/_posts/' + articleFile).then(it => it.text()).then(raw => {
+        fetch('/posts/' + articleFile).then(it => it.text()).then(raw => {
             this.document = marked(raw);
 
             setTimeout(() => {
