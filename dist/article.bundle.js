@@ -80,7 +80,7 @@ var app = new Vue({
 
         var articleFile = window.location.hash.substring(2);
 
-        fetch('/_posts/' + articleFile).then(function (it) {
+        fetch('/posts/' + articleFile).then(function (it) {
             return it.text();
         }).then(function (raw) {
             _this.document = marked(raw);
