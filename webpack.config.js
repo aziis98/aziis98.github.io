@@ -19,13 +19,13 @@ const config = {
 
     devServer: {
         contentBase: __dirname,
-        publicPath: '/_dist/',
+        publicPath: '/dist/',
         port: 8080,
     },
 
     entry: fileNames,
     output: {
-        path: path.resolve(__dirname, '_dist'),
+        path: path.resolve(__dirname, 'dist'),
         filename: '[name].bundle.js'
     },
     module: {
@@ -56,7 +56,7 @@ const config = {
     plugins: [
         // new webpack.optimize.UglifyJsPlugin(),
         new ExtractTextPlugin('styles.css'),
-        new CleanPlugin(['_dist']),
+        new CleanPlugin(['dist']),
     ]
 };
 
