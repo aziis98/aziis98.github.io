@@ -1,166 +1,59 @@
 
-# Sul Pensiero I
+# Sul Pensiero
 
-Questo è il mio primo articolo sul mio blog/portfolio personale.
+Pultroppo non ho letto molti libri nella mia vita quindi non posso pretendere di essere il primo a dire ciò di cui parlerò in questo articolo. Spesso mi capita di scoprire che qualcosa che pensavo di notare o fare solo io invece era fatta anche da molti altri se non addirittura quasi da tutti. Su questa premessa in questo articolo aggiungerò man mano tutti i miei appunti di carattere filosofico in ordine cronologico.
 
-Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus aliquid ipsum odit minima veritatis cupiditate, dolorem repudiandae. Dolores ratione ipsam facilis necessitatibus, ducimus dicta optio molestias [Ciao a tutti](https://www.google.com) ea consequuntur. Totam maxime consequatur facilis eum esse, adipisci autem similique veniam dicta, fugiat eveniet incidunt natus soluta! Consectetur explicabo illo earum illum. Cumque?
+In ogni caso prima o poi inizierò a leggere tutti i classici e simili in modo sistematico. 
 
-$$ \sum_{k=1}^{n}{ k^3 \binom{n}{k} } $$
+# Ottobre 2017
 
-An h1 header
-============
+Già da parecchio avevo in mente di scrivere qualcosa in merito a **eventi** e **simboli**.
 
-Paragraphs are separated by a blank line.
+## Eventi
 
-2nd paragraph. *Italic*, **bold**, and `monospace`. Itemized lists
-look like:
+Gli uomini danno grande importanza agli eventi al punto che molti avvenimenti storici possono essere ricondotti a singoli eventi. Un evento è una costruzione dell'uomo per indicare un preciso cambiamento in un certo momento. 
 
-  * this one
-  * that one
-  * the other one
+Per quanto riguarda il momento, si può constatare che esso non è un singolo attimo nel tempo. Un evento può occupare da un attimo a più anni, gli estremi di questo evento non sono neanche essi ben definiti se ci si pensa bene. Ad esempio se conosciamo una persona Y, l'evento di averla conosciuta non è istantaneo, man mano che ci parliamo la conosciamo. D'altra parte è totalemente legittimo dire: "giorno X ho conosciuto Y" e questo è a tutti gli effetti un evento.
 
-Note that --- not considering the asterisk --- the actual text
-content starts at 4-columns in.
+[Def. 1] L'evento è quella cosa che è tra la causa e l'effetto e che avviene in un momento più o meno preciso nel tempo e nello spazio.
 
-> Block quotes are
-> written like so.
->
-> They can span multiple paragraphs,
-> if you like.
+Ho iniziato a pensare a questo argomento degli eventi partendo dalla programmazione, in particolare esiste un paradigma chiamato "event driven programming". Invece delle classiche funzioni che prendono valori e ne restituiscono di altri, ci si basa sugli eventi. Da una parte un ente genera un evento che attraversa tutto il programma mentre Dall'altro lato ci possono essere uno o più enti che aspettano che arrivi un particolare evento.
 
-Use 3 dashes for an em-dash. Use 2 dashes for ranges (ex., "it's all
-in chapters 12--14"). Three dots ... will be converted to an ellipsis.
-Unicode is supported. ☺
+Nella [Def. 1] si parla di spazio e tempo. Nel caso degli eventi bisogna intenderli in senso esteso poiché ci possono essere eventi nelle storie, nei film, etc.
 
+## Simboli
 
+Ci sono più interpretazioni di "simbolo", prima parlerò dei simboli come oggetti astratti, poi della loro posizione nella realtà attuale.
 
-An h2 header
-------------
+Nel medioevo quando si parlava di simboli, si parlava di allegorie, una cosa intrinsecamente è un riferimento a un valore cristiano o simile (e qui si fermano le mie conoscenze sul medioevo). 
+Un simbolo è un oggetto che di per sé non ha alcun significato ma che è collegato a una o più cose. Tutto può essere un simbolo: cose, persone, eventi.
 
-Here's a numbered list:
+A pensarci forse è possibile ottenere cose con significato anche in un mondo di enti che non ne hanno. Se uno definisse il significato di X come il simbolo che è X. Il significato di X sono tutti i collegamenti di X con qualche Y.
 
- 1. first item
- 2. second item
- 3. third item
+(ogni tanto cambio lingua perché sì) "In a meaningless world I define meaning in terms of the connections between things."
 
-Note again how the actual text starts at 4 columns in (4 characters
-from the left side). Here's a code sample:
+Abbiamo iniziato a toccare i simboli. I computer ci permettono di porre avanti a noi un livello di astrazione come mai era stato. Oggi possiamo andare su Twitter o su Instagram e cercare per "hashtag". Gli hashtag non sono esattamente dei simboli perché hanno un po' di significato già con loro (nella parola che contengono - ne discuto nel paragrafo successivo), d'altra parte comunque collegano ad altre cose a loro volta connesse all'hashtag stesso.
 
-    # Let me re-iterate ...
-    for i in 1 .. 10 { do-something(i) }
+Le parole (digressione sul linguaggio) sono simboli, rispettano esattamente quanto detto sopra: di per sé non hanno senso (sono segni strani che si disegnano o che si trovano in giro), sono collegate a molte cose e tra di esse.
 
-As you probably guessed, indented 4 spaces. By the way, instead of
-indenting the block, you can use delimited blocks, if you like:
+## Il Pensiero
 
-~~~
-define foobar() {
-    print "Welcome to flavor country!";
-}
-~~~
+Esistono diversi modi di pensare e imparare a pensare in un modo nuovo è una delle cose più difficili che si possono imparare, è l'unica vera difficoltà dell'imparare qualocosa. (Forse può essere la causa del fatto che le scuole usano lo stesso metodo da più di due millenni ovvero un professore che parla e/o scrive con studenti che ascoltano e/o prendono appunti)
 
-(which makes copying & pasting easier). You can optionally mark the
-delimited block for Pandoc to syntax highlight it:
+Sommario dei tipi di pensare:
+- il pensiero matematico
+- il pensiero storico
+- il pensiero computazionale
+- il pensiero ingegneristico
+- il pensiero artistico-compositivo
 
-~~~python
-import time
-# Quick, count to ten!
-for i in range(10):
-    # (but not *too* quick)
-    time.sleep(0.5)
-    print i
-~~~
+### Il pensiero storico
 
+Non so moltissimo sul pensiero storico e sul come funziona in dettaglio, quindi spiegherò quello che si dovrebbe fare per pensare come uno storico (cosa ho capito sull'argomento dopo aver fatto storia per tre anni con Ricciardi).
 
+La storia reale è al centro della questione, bisogna pensare su parecchi livelli geografici e temporali. Ci si può porre una domanda e dopo aver considerato tutti i fattori temporalmente vicini e lontani (Ricciardi mi ucciderà perché non mi ricordo come si chiamano i due tipi) si può pensare a produrre una risposta.
+Lo storico è in grado di trovare l'esatta causa che ha generato una conseguenza in un contesto storico.
 
-### An h3 header ###
+### Il pensiero computazionale
 
-Now a nested list:
-
- 1. First, get these ingredients:
-
-      * carrots
-      * celery
-      * lentils
-
- 2. Boil some water.
-
- 3. Dump everything in the pot and follow
-    this algorithm:
-
-        find wooden spoon
-        uncover pot
-        stir
-        cover pot
-        balance wooden spoon precariously on pot handle
-        wait 10 minutes
-        goto first step (or shut off burner when done)
-
-    Do not bump wooden spoon or it will fall.
-
-Notice again how text always lines up on 4-space indents (including
-that last line which continues item 3 above).
-
-Here's a link to [a website](http://foo.bar), to a [local
-doc](local-doc.html), and to a [section heading in the current
-doc](#an-h2-header). Here's a footnote [^1].
-
-[^1]: Footnote text goes here.
-
-Tables can look like this:
-
-size  material      color
-----  ------------  ------------
-9     leather       brown
-10    hemp canvas   natural
-11    glass         transparent
-
-Table: Shoes, their sizes, and what they're made of
-
-(The above is the caption for the table.) Pandoc also supports
-multi-line tables:
-
---------  -----------------------
-keyword   text
---------  -----------------------
-red       Sunsets, apples, and
-          other red or reddish
-          things.
-
-green     Leaves, grass, frogs
-          and other things it's
-          not easy being.
---------  -----------------------
-
-A horizontal rule follows.
-
-***
-
-Here's a definition list:
-
-apples
-  : Good for making applesauce.
-oranges
-  : Citrus!
-tomatoes
-  : There's no "e" in tomatoe.
-
-Again, text is indented 4 spaces. (Put a blank line between each
-term/definition pair to spread things out more.)
-
-Here's a "line block":
-
-| Line one
-|   Line too
-| Line tree
-
-and images can be specified like so:
-
-![example image](example-image.jpg "An exemplary image")
-
-Inline math equations go in like so: $\omega = d\phi / dt$. Display
-math should get its own line and be put in in double-dollarsigns:
-
-$$I = \int \rho R^{2} dV$$
-
-And note that you can backslash-escape any punctuation characters
-which you wish to be displayed literally, ex.: \`foo\`, \*bar\*, etc.
+Assumendo il paradigma imperativo: saper pensare in modo sequenziale, una cosa dopo l'altra e capire gli effetti di ogni singolo step.

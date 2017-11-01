@@ -104,9 +104,24 @@ a
 
    font-family: 'Open Sans', sans-serif
 
+   h1, h2, h3, h4
+      letter-spacing: 0
+
+   blockquote
+      margin-left: 0
+      border-left: 4px solid #cfcfcf
+      padding-left: 1rem
+      color: #888
+
    h1
       font-family: 'Inconsolata', sans-serif
       font-size: 4.5rem
+
+      & > small
+            margin-left: -1rem
+            font-size: 2.0rem
+            color: #555
+
    h2
       font-family: 'Inconsolata', sans-serif
       font-size: 3.5rem
@@ -117,12 +132,39 @@ a
       font-size: 1.5rem
    code
       font-size: 1.6rem
+   
+   ol
+      list-style-type: lower-roman
+   ul
+      list-style-type: disc
+
    a
-      padding: 1px 2px
-      border-radius: 4px
-      text-decoration: underline
+      padding: 0 2px
+      text-decoration: none
+      border-top: 2px solid transparent
+      border-bottom: 2px solid #000
+
+      $visited-link: #738
+
       &:hover
-         // background: #9d8fc1
          background: royalblue
-         color: white
-         text-decoration: none
+         color: white !important
+         border-color: transparent
+         border-radius: 4px
+         &:visited
+            background: $visited-link
+
+      &:visited
+         color: $visited-link
+         border-color: $visited-link
+
+
+
+
+// Background Coloring
+
+body
+//    background: #f8f8fd
+
+.container
+   background: #ffffff

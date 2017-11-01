@@ -1,5 +1,5 @@
 
-console.log("Hello from aziis98!");
+console.log("%cWelcome from aziis98!", "font-size: x-large");
 
 const app = new Vue({
    el: '#app',
@@ -7,9 +7,8 @@ const app = new Vue({
       const website = new Request('/website.json');
 
       fetch(website).then(res => res.json()).then(data => {
-         console.log(data);
-         
-         this.posts = data.posts;
+          this.posts = data.posts.filter(it => !(it.hidden === "true"));
+        //   console.log(data);
       });
    },
    data: {

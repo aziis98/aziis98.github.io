@@ -1,10 +1,18 @@
 {
 	"posts": [
 		{
+			"hidden": "true",
 			"name": "Sul Pensiero I",
 			"subtitle": "Filosofia",
-			"crono": "16 Ottobre 2017",
+			"crono": "21 Ottobre 2017",
 			"link": "/article.html#/sul-pensiero-1.md"
+		},
+		{
+			"hidden": "true",
+			"name": "Testing Markdown I",
+			"subtitle": "Debugging",
+			"crono": "21 Ottobre 2017",
+			"link": "/article.html#/test-1.md"
 		},
 		{
 			"name": "Dashboard",
