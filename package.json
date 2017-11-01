@@ -9,6 +9,7 @@
   "author": "aziis98 <antonio.delucreziis@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "build": "webpack",
     "dev": "webpack-dev-server"
   },
   "devDependencies": {
