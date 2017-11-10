@@ -1,6 +1,6 @@
 # About <small>(This page is work in progress)</small>
 
-I'm Antonio De Lucreziis (aziis98) and currently I'm studing Maths in the university of Pisa in Italy.
+I'm Antonio De Lucreziis (aziis98) and I'm currently studing Maths in the university of Pisa in Italy.
 
 ### Social
 
