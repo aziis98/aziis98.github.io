@@ -15,11 +15,11 @@ Gli uomini danno grande importanza agli eventi al punto che molti avvenimenti st
 
 Per quanto riguarda il momento, si può constatare che esso non è un singolo attimo nel tempo. Un evento può occupare da un attimo a più anni, gli estremi di questo evento non sono neanche essi ben definiti se ci si pensa bene. Ad esempio se conosciamo una persona Y, l'evento di averla conosciuta non è istantaneo, man mano che ci parliamo la conosciamo. D'altra parte è totalemente legittimo dire: "giorno X ho conosciuto Y" e questo è a tutti gli effetti un evento.
 
-[Def. 1] L'evento è quella cosa che è tra la causa e l'effetto e che avviene in un momento più o meno preciso nel tempo e nello spazio.
+> **[Def. 1]** L'evento è quella cosa che è tra la causa e l'effetto e che avviene in un momento più o meno preciso nel tempo e nello spazio.
 
 Ho iniziato a pensare a questo argomento degli eventi partendo dalla programmazione, in particolare esiste un paradigma chiamato "event driven programming". Invece delle classiche funzioni che prendono valori e ne restituiscono di altri, ci si basa sugli eventi. Da una parte un ente genera un evento che attraversa tutto il programma mentre Dall'altro lato ci possono essere uno o più enti che aspettano che arrivi un particolare evento.
 
-Nella [Def. 1] si parla di spazio e tempo. Nel caso degli eventi bisogna intenderli in senso esteso poiché ci possono essere eventi nelle storie, nei film, etc.
+Nella **[Def. 1]** si parla di spazio e tempo. Nel caso degli eventi bisogna intenderli in senso esteso poiché ci possono essere eventi nelle storie, nei film, etc.
 
 ## Simboli
 
