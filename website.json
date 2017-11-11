@@ -4,6 +4,7 @@
 			"hidden": "true",
 			"name": "Sul Pensiero I",
 			"subtitle": "Filosofia",
+			"description": "Raccolta di gran parte dei miei appunti di carattere filosofico",
 			"crono": "21 Ottobre 2017",
 			"link": "/article.html#/sul-pensiero-1.md"
 		},
@@ -14,6 +15,13 @@
 			"crono": "21 Ottobre 2017",
 			"link": "/article.html#/test-1.md"
 		},
+		{
+			"name": "Sclero",
+			"subtitle": "Web App",
+			"description": "Un generatore di stringhe del tipo 'Gnnrnnrnr'",
+			"crono": "Qualche mese fa",
+			"link": "https://aziis98.github.io/sclero"
+		}
 		{
 			"name": "Dashboard",
 			"subtitle": "Web App",
